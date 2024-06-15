@@ -1,6 +1,10 @@
+'use client'
+import AudioRecorder from "@/components/AudioRecorder";
+
 export default function Home() {
-  return (
-  	<div>	
+	return (
+	<div>
+		<AudioRecorder/>
 	</div>
-  );
+   );
 }
