@@ -13,7 +13,7 @@ const Page = () => {
       try {
         const response = await fetch("/dataBikes.json");
         const fileDataBike = await response.json();
-        const foundBike = fileDataBike.find((bike: any) => bike.id === id);
+        const foundBike = fileDataBike.find((curr: any) => curr.ID === id);
         setBike(foundBike);
       } catch (error) {
         console.error("Error fetching data:", error);

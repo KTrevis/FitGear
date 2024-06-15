@@ -12,14 +12,10 @@ let chunks: Blob[] = []
 export default function AudioRecorder({ history, setHistory, setAudioUrl }) {
 	const [recording, setRecording] = useState(false)
 	const [isLoading, setIsLoading] = useState(false)
-
-
 	const router = useRouter();
 
 	async function handleRecorderStop() {
 		setIsLoading(true)
-
-
 		const blob = new Blob(chunks, { type: "audio/wav" })
 		const formData = new FormData()
 		formData.append("recording", blob)
@@ -27,9 +23,6 @@ export default function AudioRecorder({ history, setHistory, setAudioUrl }) {
 			method: "POST",
 			body: formData
 		})
-
-		console.log("Transcription: " + res);
-
 		const json = await res.json()
 		const updateHistory = [...history, { role: "user", content: json }];
 		setHistory(updateHistory)
@@ -37,11 +30,9 @@ export default function AudioRecorder({ history, setHistory, setAudioUrl }) {
 			method: "POST",
 			body: JSON.stringify(updateHistory)
 		})
-
 		const replyText = await res.json()
 		setHistory([...history, { role: "assistant", content: replyText }])
 		chunks = []
-
 		if (replyText.includes("ID FOUND")) {
 			const idStr = replyText.split(":")[1];
 			const id = idStr ? parseInt(idStr) : 0;
@@ -49,12 +40,9 @@ export default function AudioRecorder({ history, setHistory, setAudioUrl }) {
 			router.push("/result");
 			return ;
 		}
-	
 		const req = await fetch("/api/speech", { method: "POST", body: JSON.stringify(replyText) })
 		const audio = await req.blob()
-		
 		setIsLoading(false)
-
 		setAudioUrl(URL.createObjectURL(audio))
 	}
 
