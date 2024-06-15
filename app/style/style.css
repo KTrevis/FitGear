@@ -30,7 +30,7 @@
 
 .recordButton{
 	position: absolute;
-	bottom: 0rem;
+	bottom: 0;
 	left: 0;
 	cursor: pointer;
 }
@@ -67,4 +67,8 @@
 	width: 100%;
 	height: 2px;
 	background-color: white;
+}
+
+.buttonPlay{
+	margin-bottom: 2rem;
 }
