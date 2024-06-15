@@ -27,14 +27,12 @@ export default function AudioRecorder({history, setHistory, setAudioUrl}) {
 			method: "POST",
 			body: JSON.stringify(updateHistory)
 		})
-
 		const replyText = await res.json()
+		console.log(replyText)
 		setHistory([...history, {role: "assistant", content: replyText}])
 		chunks = []
-
 		const req = await fetch("/api/speech", {method: "POST", body: JSON.stringify(replyText)})
 		const audio = await req.blob()
-
 		setAudioUrl(URL.createObjectURL(audio))
 	}
 

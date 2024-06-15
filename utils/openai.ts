@@ -2,6 +2,7 @@ import OpenAI from "openai"
 
 export const openai = new OpenAI({ apiKey: process.env.AI_API_KEY })
 export const assistantID: string = "asst_lozEYO0j3sFBdxvpEd867r86"
+export const intermediateAssistantID: string = "asst_k490uzyXIMBJbcayWMFIz5tS"
 
 export async function getAssistant() {
 	return await openai.beta.assistants.retrieve(assistantID)
