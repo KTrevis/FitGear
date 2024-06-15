@@ -1,0 +1,64 @@
+
+
+.landing{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.logoName{
+	width: auto;
+	position: absolute;
+	top: 2rem;
+	height: 40px;
+}
+
+.mainTitle{
+	font-weight: 600;
+    position: absolute;
+    top: -25rem;
+    font-size: 17vw;
+    line-height: 16vw;
+}
+
+.assistant{
+	position: absolute;
+	bottom: 0;
+}
+
+.recordButton{
+	position: absolute;
+	bottom: 0rem;
+	left: 0;
+	cursor: pointer;
+}
+
+.playerScreen{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3rem 0rem;
+}
+
+.logo{
+	top: 2rem;
+	left: 1rem;
+	position: absolute;
+}
+
+.wave{
+	width: 100%;
+}
+
+.sellerLight{
+	margin-top: 8rem;
+}
+
+.iconRecord{
+	width: 10px;
+}

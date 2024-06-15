@@ -1,5 +1,8 @@
 'use client'
+import { Button, divider } from "@nextui-org/react"
 import { useState } from "react"
+import React from "react"
+import Image from "next/image"
 
 let mediaStream: MediaStream
 let mediaRecorder: MediaRecorder
@@ -50,8 +53,11 @@ export default function AudioRecorder({history, setHistory, setAudioUrl}) {
 	}
 
 	return ( 
-		<>
-			<button onClick={toggleRecording}>{recording ? "Stop record" : "Start record"}</button>
+		<>	
+			<Button onClick={toggleRecording} className="buttonPlay" size="lg" color={recording ? "danger" : "primary"}>
+							<Image className="iconRecord" src={recording ? "/image/stopIcon.png" : "/image/playIcon.png"} alt="play icon" height={50} width={50} />
+							{recording ? "Stop" : "Parler"}
+			</Button>
 		</>
 	)
 }
