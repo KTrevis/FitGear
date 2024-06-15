@@ -1,40 +1,42 @@
 'use client'
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 const Page = () => {
-  const [bike, setBike] = useState<any>();
+  const [bike, setBike] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const idsStr = localStorage.getItem("id");
-    const ids = idsStr ? JSON.parse(idsStr) : [];
-    const id = ids.length > 0 ? ids[0] : null;
+    const idStr = localStorage.getItem("id");
+    const id = idStr ? parseInt(idStr) : 0;
 
     const findBike = async () => {
-      if (id !== null) {
-        try {
-          const response = await fetch("/dataBikes.json");
-          const fileDataBike = await response.json();
-          const foundBike = fileDataBike.find((bike: any) => bike.id === id);
-          setBike(foundBike);
-        } catch (error) {
-          console.error("Error fetching data:", error);
-        }
+      try {
+        const response = await fetch("/dataBikes.json");
+        const fileDataBike = await response.json();
+        const foundBike = fileDataBike.find((bike: any) => bike.id === id);
+        setBike(foundBike);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
     findBike();
   }, []);
 
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (!bike) {
+    return <div>No bike found</div>;
+  }
+
   return (
-    <div className="resultPage">
-      {bike ? (
-        <>
-          <p>Result page my friend l'id du bike est: {bike.id}</p>
-          <p>Le nom du vélo est: {bike.nom_modele}</p>
-        </>
-      ) : (
-        <p>Loading...</p>
-      )}
+    <div>
+      <p>Result page my friend, l'id du bike est: {bike.id}</p>
+      <p>Le nom du vélo est: {bike.nom_modele}</p>
     </div>
   );
 };

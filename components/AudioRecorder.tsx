@@ -12,17 +12,9 @@ let chunks: Blob[] = []
 export default function AudioRecorder({ history, setHistory, setAudioUrl }) {
 	const [recording, setRecording] = useState(false)
 	const [isLoading, setIsLoading] = useState(false)
-	
-	const router = useRouter();
 
-	async function findBike(answer: string) {
-		const tabId: Number[] = [];
-		const response = await fetch("/dataBikes.json");
-		const fileDataBike = await response.json();
-		const bike = fileDataBike.filter((bike: any) => answer.includes(bike.nom_modele));
-		return tabId;
-	}
-	
+
+	const router = useRouter();
 
 	async function handleRecorderStop() {
 		setIsLoading(true)
@@ -50,12 +42,14 @@ export default function AudioRecorder({ history, setHistory, setAudioUrl }) {
 		setHistory([...history, { role: "assistant", content: replyText }])
 		chunks = []
 
-		if (replyText.includes("BRAVO")) {
-			const tabId = findBike(replyText)
-			localStorage.setItem("id", JSON.stringify(tabId))
-			router.push("/result")
+		if (replyText.includes("ID FOUND")) {
+			const idStr = replyText.split(":")[1];
+			const id = idStr ? parseInt(idStr) : 0;
+			localStorage.setItem("id", JSON.stringify(id));
+			router.push("/result");
+			return ;
 		}
-
+	
 		const req = await fetch("/api/speech", { method: "POST", body: JSON.stringify(replyText) })
 		const audio = await req.blob()
 		
