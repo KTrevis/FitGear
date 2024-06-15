@@ -40,7 +40,9 @@ export default function AudioRecorder({history, setHistory}) {
 		mediaRecorder.start()
 	}
 
-	return (
-		<button onClick={toggleRecording}>Record</button>
+	return ( 
+		<>
+			<button onClick={toggleRecording}>{recording ? "Stop record" : "Start record"}</button>
+		</>
 	)
 }
