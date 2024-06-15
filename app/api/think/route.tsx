@@ -15,7 +15,7 @@ export async function POST(req: Request) {
 	const history = await req.json()
 	let answer = await getAnswerFromAssistant(assistantID, history)
 	console.log("answer model 1:", answer)
-	if (answer.endsWith("BRAVO")) {
+	if (answer.includes("BRAVO")) {
 		answer = await getAnswerFromAssistant(intermediateAssistantID, [{role: "user", content: answer}])
 		answer = "ID FOUND" + answer;
 		console.log("answer model 2: ", answer)
