@@ -6,7 +6,7 @@ let mediaRecorder: MediaRecorder
 let chunks: Blob[] = []
 
 // @ts-ignore
-export default function AudioRecorder({history, setHistory}) {
+export default function AudioRecorder({history, setHistory, setAudioUrl}) {
 	const [recording, setRecording] = useState(false)
 
 	async function handleRecorderStop() {
@@ -18,12 +18,21 @@ export default function AudioRecorder({history, setHistory}) {
 			body: formData
 		})
 		const json = await res.json()
-		setHistory([...history, {role: "user", content: json}])
+		const updateHistory = [...history, {role: "user", content: json}];
+		setHistory(updateHistory)
 		res = await fetch("/api/think", {
 			method: "POST",
-			body: JSON.stringify(history)
+			body: JSON.stringify(updateHistory)
 		})
+
+		const replyText = await res.json()
+		setHistory([...history, {role: "assistant", content: replyText}])
 		chunks = []
+
+		const req = await fetch("/api/speech", {method: "POST", body: JSON.stringify(replyText)})
+		const audio = await req.blob()
+
+		setAudioUrl(URL.createObjectURL(audio))
 	}
 
 	async function toggleRecording() {
