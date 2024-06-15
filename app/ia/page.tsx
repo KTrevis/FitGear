@@ -31,7 +31,7 @@ export default function Home() {
     return (
         <div className="playerScreen">
             <Image className="logo" priority src="/image/logo.png" alt="logo Name" height={100} width={100} />
-            <Image className="sellerLight" priority  src={!isPlaying ? "/image/sellerLight.png" : "/image/sellerLoud.png"} alt="Seller Light" height={100} width={100} />
+            <Image className="sellerLight" priority  src="/image/sellerLoud.png" alt="Seller Light" height={100} width={100} />
             {isPlaying ? (
                 <img className="wave" src={"image/wave.gif"} alt="record wave..." />
             ) : (

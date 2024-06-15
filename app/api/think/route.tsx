@@ -1,4 +1,5 @@
 import { openai, assistantID, intermediateAssistantID } from "@/utils/openai";
+import Groq from "groq-sdk";
 import { ThreadCreateParams } from "openai/src/resources/beta/index.js";
 
 async function getAnswerFromAssistant(assistantID: string, history: ThreadCreateParams.Message[]) {

@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import "@/app/style/style.css";
-import CardResult from '@/components/cardResult';
+import CardResult from '@/components/CardResult';
+import Link from 'next/link';
 
 
 const Page = () => {
@@ -30,19 +31,19 @@ const Page = () => {
 	}, []);
 
 	if (loading) {
-		return <div>Loading...</div>;
+		return <div className='loadingPageResult'>Loading...</div>;
 	}
 
 	if (!bike) {
 		return <div>No bike found</div>;
 	}
-
+	console.log("bike" + bike.lien);
 	return (
-		<div>
+		<div className='resultPage'>
 			<Image className="logo" priority src="/image/logo.png" alt="logo Name" height={100} width={100} />
-			<Image className="recordAloneIcon" priority src="/image/recordAlone.png" alt="Seller Light" height={100} width={100} />
-			<p>Result page my friend, l'id du bike est: {bike.id}</p>
-			<p>Le nom du vélo est: {bike.nom_modele}</p>
+			<Link href="/ia">
+				<Image className="recordAloneIcon" priority src="/image/recordAlone.png" alt="Seller Light" height={100} width={100} />
+			</Link>
 			<CardResult bike={bike} />
 		</div>
 	);

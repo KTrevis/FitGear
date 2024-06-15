@@ -8,7 +8,6 @@ export default function Home() {
 
 	return (
 	<div className="landing">
-		<div className="background">
 			<Image className="logoName" priority src="/image/logoName.png" alt="logo Name"  height={500} width={500} />
 			<TitleLanding />
 			<Image className="assistant" src="/image/assistant.png" alt="vendeur" height={500} width={500} />
@@ -16,7 +15,6 @@ export default function Home() {
 				<Image className="recordButton" src="/image/record.png" alt="record button" height={500} width={500} />
 			</Link>
 			
-		</div>
 	</div>
    );
 }
