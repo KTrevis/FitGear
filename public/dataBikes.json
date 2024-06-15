@@ -1,0 +1,92 @@
+[
+  {
+    "ID": 1,
+    "lien": "https://www.decathlon.fr/p/vtt-enfant-24-expl-500-9-12-ans/_/R-p-337767?mc=8733739",
+    "nom_modele": "VTT ENFANT 24\" EXPL 500 JAUNE 9-12 ANS",
+    "prix": "240€",
+    "couleur_disponible": "jaune",
+    "taille_disponible": "9-12 ans",
+    "description": "Nous avons conçu ce vélo tout terrain pour les enfants de 9 à 12 ans (135 à 150 cm) souhaitant pratiquer régulièrement le VTT. Pour affronter facilement les obstacles des terrains accidentés, nous avons équipé ce VTT 24 pouces d'une fourche suspendue. Grâce à ses 7 vitesses vous pouvez aborder des sentiers vallonnés."
+  },
+  {
+    "ID": 2,
+    "lien": "https://www.decathlon.fr/p/velo-vtt-cross-country-cadre-carbone-race-940-s/_/R-p-350265?mc=8841597",
+    "nom_modele": "Vélo VTT Cross country Cadre Carbone - Race 940 S",
+    "prix": "4499€",
+    "couleur_disponible": "noir et rouge",
+    "taille_disponible": "XL",
+    "description": "Ce VTT est conçu pour les vététistes qui pratiquent le Cross-Country (XCO et XCM) à très haut niveau de performance. Il a été développé en collaboration avec l'équipe Rockrider Ford Racing Team. Avec déjà plusieurs podiums de Coupe du Monde à son actif et plusieurs médailles en championnats nationaux XCC et XCO !"
+  },
+  {
+    "ID": 3,
+    "lien": "https://www.decathlon.fr/p/velo-vtt-randonnee-st-120-27-5/_/R-p-305496?mc=8602020",
+    "nom_modele": "VÉLO VTT RANDONNEE ST 120 NOIR BLEU 27,5\"",
+    "prix": "359€",
+    "couleur_disponible": "noir et bleu",
+    "taille_disponible": ["S", "M", "L", "XL"],
+    "description": "Conçu pour vos premières randonnées à vélo. Avec son mono plateau, profitez d'un changement de vitesses simple et rapide"
+  },
+  {
+    "ID": 4,
+    "lien": "https://www.decathlon.fr/p/velo-vtt-electrique-semi-rigide-27-5-e-st-100-blanc-rouge/_/R-p-337499?mc=8732637",
+    "nom_modele": "Vélo VTT électrique semi-rigide 27,5\" - E-ST 100 Blanc Rouge",
+    "prix": "999€",
+    "couleur_disponible": "blanc et rouge",
+    "taille_disponible": ["S", "M", "L", "XL"],
+    "description": "Conçu pour les randonnées tout terrain, sur parcours techniquement accessibles et avec un dénivelé modéré (parcours vallonnés). C'est un VTT parfaitement adapté pour vivre ses premières sensations en tout terrain, facile à faible dénivelé. Connecté : il propose des fonctions enrichies avec son application mobile."
+  },
+  {
+    "ID": 5,
+    "lien": "https://www.decathlon.fr/p/velo-tout-chemin-riverside-500-enjambement-bas/_/R-p-336198?mc=8669962&c=gris_bleu",
+    "nom_modele": "VELO TOUT CHEMIN RIVERSIDE 500 ENJAMBEMENT BAS rouge brique",
+    "prix": "399€",
+    "couleur_disponible": ["rouge", "brique"],
+    "taille_disponible": ["S", "M", "L", "XL"],
+    "description": "Facile à utiliser, polyvalent et confortable, ce vélo tout chemin vous accompagne lors de vos sorties et vos balades sur piste cyclable, route, et chemin. Notre équipe de passionné·es a créé ce vélo de trekking, ergonomique et facile à enjamber, pour que vous puissiez profiter en toute confiance de votre terrain de jeu préféré : la nature !"
+  },
+  {
+    "ID": 6,
+    "lien": "https://www.decathlon.fr/p/velo-route-edr-cf-ultegra-disc/_/R-p-324426?mc=8581227",
+    "nom_modele": "VELO ROUTE EDR CF ULTEGRA DISC rouge",
+    "prix": "2 750€",
+    "couleur_disponible": ["rouge", "noir"],
+    "taille_disponible": ["XS", "S", "M", "L", "XL"],
+    "description": "Nouveau cadre de la gamme EDR (EnDuRance), ce vélo route ultra-performant est conçu pour accompagner les cyclistes les plus exigeants sur toutes leurs sorties. Aussi à l'aise en montagne que sur terrains mixtes, ce nouveau cadre saura vous surprendre par sa nervosité et son confort."
+  },
+  {
+    "ID": 7,
+    "lien": "https://www.decathlon.fr/p/velo-pliant-electrique-e-fold-500/_/R-p-330540?mc=8654724&c=bleu",
+    "nom_modele": "Vélo pliant électrique E FOLD 500 Bleu",
+    "prix": "1 099€",
+    "couleur_disponible": ["bleu marinne", "vert armé"],
+    "taille_disponible": ["S", "M", "L"],
+    "description": "Très confortable pour se déplacer régulièrement en ville ou se balader. Il se stocke facilement chez soi, dans un coffre de voiture ou de camping-car. Grâce à ses roues de 20\", son cadre acier, sa potence et tige de selle réglables, ses accessoires (porte-bagage), son autonomie jusqu'à 50km, il est le compagnon idéal pour de confortables balades."
+  },
+  {
+    "ID": 8,
+    "lien": "https://www.decathlon.fr/p/velo-vtt-electrique-semi-rigide-29-e-expl-700-vert-bouteille/_/R-p-334408?mc=8649387&c=vert",
+    "nom_modele": "Vélo VTT électrique semi rigide 29\" - E-EXPL 700 Vert bouteille",
+    "prix": "2 499€",
+    "couleur_disponible": "vert mousse",
+    "taille_disponible": ["S", "M", "L", "XL"],
+    "description": "Conçu pour les randonnées tout terrain sur chemins peu cassants, avec du dénivelé important (moyenne montagne). C'est un vélo parfaitement adapté pour découvrir de nouveaux horizons à VTT. Osez aller plus loin en toute sécurité grâce à son autonomie !"
+  },
+  {
+    "ID": 9,
+    "lien": "https://www.decathlon.fr/p/velo-vtt-semi-rigide-rockrider-xc-100-29-shimano-deore-1x11/_/R-p-330066?mc=8829989&c=blanc",
+    "nom_modele": "Vélo VTT Cross country RACE 700 Cadre Aluminium",
+    "prix": "999€",
+    "couleur_disponible": "blanc",
+    "taille_disponible": ["S", "M", "L", "XL"],
+    "description": "Ce VTT est conçu pour se lancer dans la pratique du VTT Cross Country (XC). Votre premier VTT XC axé performance à prix contenu. Cadre en aluminium, fourche à air et transmission mono-plateau 11 vitesses."
+  },
+  {
+    "ID": 10,
+    "lien": "https://www.decathlon.fr/p/velo-vtt-cross-country-race-900s-gx-axs-roues-reynolds-fourche-sid/_/R-p-352618?mc=8871501",
+    "nom_modele": "VELO VTT cross country RACE 900S GX AXS, roues Reynolds, fourche SID",
+    "prix": "3 499€",
+    "couleur_disponible": "blanc",
+    "taille_disponible": "S",
+    "description": "Ce VTT est conçu pour performer dans la pratique du XC et XC Marathon Elu VTT XCO de l'année 2023 par VTT Mag! Ce cadre a été primé de nombreuses fois lors de la saison 2022: 2 top 10 en Coupe du Monde XCO, Champion de France Marathon et vainqueur de la TransVésubienne."
+  }
+]

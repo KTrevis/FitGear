@@ -14,7 +14,7 @@ export default function Home() {
     const [history, setHistory] = useState<ChatData[]>([]);
     const [audioUrl, setAudioUrl] = useState<string>("");
     const [isPlaying, setIsPlaying] = useState<boolean>(false);
-
+	
     const audioRef = useRef<HTMLAudioElement | null>(null);
 
     useEffect(() => {

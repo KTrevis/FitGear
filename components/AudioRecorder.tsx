@@ -1,8 +1,9 @@
 'use client'
 import { Button, divider } from "@nextui-org/react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import React from "react"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 
 let mediaStream: MediaStream
 let mediaRecorder: MediaRecorder
@@ -12,6 +13,8 @@ let chunks: Blob[] = []
 export default function AudioRecorder({ history, setHistory, setAudioUrl }) {
 	const [recording, setRecording] = useState(false)
 	const [isLoading, setIsLoading] = useState(false)
+	
+	const router = useRouter()
 
 	async function handleRecorderStop() {
 		setIsLoading(true)
@@ -30,10 +33,15 @@ export default function AudioRecorder({ history, setHistory, setAudioUrl }) {
 			method: "POST",
 			body: JSON.stringify(updateHistory)
 		})
-		const replyText = await res.json()
+		const replyText:string = await res.json()
 		setHistory([...history, { role: "assistant", content: replyText }])
 		chunks = []
 
+		if (replyText.startsWith("ID FOUND")) {
+			const id = replyText.split(":")[1]
+			localStorage.setItem("id", id);
+			router.push("/result")
+		}
 		const req = await fetch("/api/speech", { method: "POST", body: JSON.stringify(replyText) })
 		const audio = await req.blob()
 		
