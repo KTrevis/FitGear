@@ -13,18 +13,18 @@ const Page = () => {
 		const idStr = localStorage.getItem("id");
 		const id = idStr ? parseInt(idStr) : 0;
 
-		const findBike = async () => {
-			try {
-				const response = await fetch("/dataBikes.json");
-				const fileDataBike = await response.json();
-				const foundBike = fileDataBike.find((bike: any) => bike.id === id);
-				setBike(foundBike);
-			} catch (error) {
-				console.error("Error fetching data:", error);
-			} finally {
-				setLoading(false);
-			}
-		};
+    const findBike = async () => {
+      try {
+        const response = await fetch("/dataBikes.json");
+        const fileDataBike = await response.json();
+        const foundBike = fileDataBike.find((curr: any) => curr.ID === id);
+        setBike(foundBike);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
 		findBike();
 	}, []);
