@@ -30,7 +30,6 @@ export default function AudioRecorder({ history, setHistory, setAudioUrl }) {
 			method: "POST",
 			body: JSON.stringify(updateHistory)
 		})
-
 		const replyText = await res.json()
 		setHistory([...history, { role: "assistant", content: replyText }])
 		chunks = []
