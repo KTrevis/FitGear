@@ -9,7 +9,7 @@ let mediaRecorder: MediaRecorder
 let chunks: Blob[] = []
 
 // @ts-ignore
-export default function AudioRecorder({ history, setHistory, setAudioUrl }) {
+export default function AudioRecorder({ history, setHistory, setAudioUrl, isPlaying }) {
 	const [recording, setRecording] = useState(false)
 	const [isLoading, setIsLoading] = useState(false)
 	const router = useRouter();
@@ -26,6 +26,7 @@ export default function AudioRecorder({ history, setHistory, setAudioUrl }) {
 		const json = await res.json()
 		const updateHistory = [...history, { role: "user", content: json }];
 		setHistory(updateHistory)
+
 		res = await fetch("/api/think", {
 			method: "POST",
 			body: JSON.stringify(updateHistory)
@@ -62,7 +63,7 @@ export default function AudioRecorder({ history, setHistory, setAudioUrl }) {
 
 	return (
 		<>
-			<Button isLoading={isLoading} onClick={toggleRecording} className="buttonPlay" size="lg" color={isLoading ? "warning" : (recording ? "danger" : "primary")}>
+			<Button disabled={isPlaying} isLoading={isLoading} onClick={toggleRecording} className="buttonPlay" size="lg" color={isLoading ? "warning" : (recording ? "danger" : "primary")}>
 				{!isLoading && <Image className="iconRecord" src={recording ? "/image/stopIcon.png" : "/image/playIcon.png"} alt="play icon" height={50} width={50} />}
 				{isLoading ? "Chargement" : (recording ? "Stop" : "Parler")}
 			</Button>

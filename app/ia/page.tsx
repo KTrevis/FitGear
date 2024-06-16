@@ -27,10 +27,10 @@ export default function Home() {
     const handleAudioEnded = () => {
         setIsPlaying(false);
     };
-
+	console.log("\n\n History: ", history, "\n\n");
     return (
         <div className="playerScreen">
-            <Image className="logo" priority src="/image/logo.png" alt="logo Name" height={100} width={100} />
+            <Image className="logo" priority src="/image/logoFit.png" alt="logo Name" height={100} width={100} />
             <Image className="sellerLight" priority  src="/image/sellerLoud.png" alt="Seller Light" height={100} width={100} />
             {isPlaying ? (
                 <img className="wave" src={"image/wave.gif"} alt="record wave..." />
@@ -38,7 +38,7 @@ export default function Home() {
                 <div className="waveLine"></div>
             )}
             <audio ref={audioRef} src={audioUrl} onEnded={handleAudioEnded} />
-            <AudioRecorder history={history} setHistory={setHistory} setAudioUrl={setAudioUrl} />
+            <AudioRecorder history={history} setHistory={setHistory} setAudioUrl={setAudioUrl} isPlaying={isPlaying}/>
         </div>
     );
 }

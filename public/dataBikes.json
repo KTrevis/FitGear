@@ -88,5 +88,95 @@
     "couleur_disponible": "blanc",
     "taille_disponible": "S",
     "description": "Ce VTT est conçu pour performer dans la pratique du XC et XC Marathon Elu VTT XCO de l'année 2023 par VTT Mag! Ce cadre a été primé de nombreuses fois lors de la saison 2022: 2 top 10 en Coupe du Monde XCO, Champion de France Marathon et vainqueur de la TransVésubienne."
+  },
+  {
+    "ID": 11,
+    "lien": "https://www.decathlon.fr/p/velo-gravel-triban-grvl-520-homme-subcompact/_/R-p-313015?mc=8587697&c=violet_orange",
+    "nom_modele": "VELO GRAVEL TRIBAN GRVL 520 HOMME SUBCOMPACT",
+    "prix": "1 000€",
+    "couleur_disponible": "Violet Bordeaux / Tomate Vif",
+    "taille_disponible": ["S", "M"],
+    "description": "Nous avons conçu et testé ce vélo Gravel pour vos sorties régulières. Il vous garantira confort et polyvalence sur des pistes et chemins roulants. Notre nouveau vélo Gravel a une nouvelle géométrie spécifique, roues et pneus Gravel Tubeless Ready, le Shimano 105 et le Sub-Compact Praxis 48/32 amènent confort et polyvalence sur pistes roulantes"
+  },
+  {
+    "ID": 12,
+    "lien": "https://www.decathlon.fr/p/velo-de-route-ncr-cf-rival-axs-etap-12-s-bleu/_/R-p-339179?mc=8738470&c=bleu",
+    "nom_modele": "VELO DE ROUTE NCR CF RIVAL AXS ETAP 12 S BLEU",
+    "prix": "2900€",
+    "couleur_disponible": "Bleu Électrique",
+    "taille_disponible": ["XL", "M"],
+    "description": "Conçu pour vous apporter un maximum de plaisir. Ce vélo carbone Néoracer allie performance et polyvalence. Léger , dynamique et nerveux , le cadre du Néo carbone est très polyvalent. Quelque soit la route ; plaine, montagne , pavés, avec son freinage disque hydraulique , toutes les routes s'offrent à vous"
+  },
+  {
+    "ID": 13,
+    "lien": "https://www.decathlon.fr/p/velo-de-route-rcr-rival-axs-bleu-comete/_/R-p-343500?mc=8771566&c=bleu",
+    "nom_modele": "VELO DE ROUTE RCR RIVAL AXS BLEU COMÈTE",
+    "prix": "4200€",
+    "couleur_disponible": "Violet Comete",
+    "taille_disponible": ["XL", "M", "S", "L"],
+    "description": "Ce vélo a été pensé pour les coursiers, ceux pour qui l'équilibre aéro, légèreté et rigidité est une obsession. Le RCR pour RACER porte son ADN dans son nom. Notre vélo le plus abouti à ce jour, développé et testé par des aérodynamiciens, il est un équilibre parfait entre performance pure et plaisir de rouler. RCR ou RCR PRO, à vous de choisir !"
+  },
+  {
+    "ID": 14,
+    "lien": "https://www.decathlon.fr/p/velo-vtt-electrique-semi-rigide-29-e-expl-700-vert-bouteille/_/R-p-334408?mc=8649387&c=vert",
+    "nom_modele": "Vélo VTT électrique semi rigide 29' - E-EXPL 700 Vert bouteil",
+    "prix": "2 499€",
+    "couleur_disponible": "Vert Mousse",
+    "taille_disponible": ["XL", "M", "S", "L"],
+    "description": "Conçu pour les randonnées tout terrain sur chemins peu cassants, avec du dénivelé important (moyenne montagne). C'est un vélo parfaitement adapté pour découvrir de nouveaux horizons à VTT. Osez aller plus loin en toute sécurité grâce à son autonomie !"
+  },
+  {
+    "ID": 15,
+    "lien": "https://www.decathlon.fr/p/velo-enfant-2en1-draisienne-3-5-ans-14-pouces-discover-500/_/R-p-333346?mc=8646304&c=rouge",
+    "nom_modele": "VELO ENFANT 2EN1 DRAISIENNE 3-5 ANS 14 pouces - DISCOVER 500 Rouge",
+    "prix": "150€",
+    "couleur_disponible": "Rouge",
+    "taille_disponible": "14'",
+    "description": "Légereté et innovation! Avec ce vélo 2en1 de 6,6kg seulement, les enfants dès 3 ans (de 90cm à 110cm) apprendront à pédaler facilement sans petites roues ! Comment? Utilisable en mode draisienne, ils connaîtront parfaitement le vélo et se sentiront en toute confiance lorsque vous remettrez les pédales, en 10s... et sans outils! Une innovation DECATHLON."
+  },
+  {
+    "ID": 16,
+    "lien": "https://www.decathlon.fr/p/velo-vtt-randonnee-expl-500-29/_/R-p-330628?mc=8615847&c=orange",
+    "nom_modele": "VÉLO VTT RANDONNÉE EXPL 500 ROUGE 29'",
+    "prix": "499€",
+    "couleur_disponible": "Tomate Vif",
+    "taille_disponible": ["XL", "M", "S", "L"],
+    "description": "Conçu pour vos randonnées VTT, toute l'année, de 2h à 3h. Confort et réactivité face aux aléas du terrain: les roues 29' (27,5' en S), le mono plateau et les freins à disque hydrauliques du VTT EXPL 500 vont changer vos randonnées VTT !"
+  },
+  {
+    "ID": 17,
+    "lien": "https://www.decathlon.fr/p/velo-route-cyclotourisme-rc120-disque-marine/_/R-p-302301?mc=8619132&c=gris",
+    "nom_modele": "Vélo route Cyclotourisme RC120 Disque Gris Clair",
+    "prix": "550€",
+    "couleur_disponible": "Gris Perle",
+    "taille_disponible": ["s", "M", "XL"],
+    "description": "Nous avons conçu ce vélo pour vous permettre de progresser facilement. Sa polyvalence et ses 2X8 vitesses vous permettront d'explorer toutes les routes. Progressez avec un vélo polyvalent! Sa géométrie confort, son cadre en aluminium, sa fourche carbone et ses freins à disque vous permettront de vous frotter à tous les types de parcours"
+  },
+  {
+    "ID": 18,
+    "lien": "https://www.decathlon.fr/p/rcr-pro-replica-dura-ace-di2-decathlon-ag2r-team/_/R-p-348368?mc=8812536",
+    "nom_modele": "RCR PRO REPLICA DURA ACE DI2 DECATHLON AG2R TEAM",
+    "prix": "9000€",
+    "couleur_disponible": "Magnifique woula",
+    "taille_disponible": ["S", "M", "L"],
+    "description": "Conçu pour battre vos records personnels ou gagner en course, le RCR Pro de l’équipe Decathlon AG2R La Mondiale est là. Découvrez le RCR Pro, conçu par des experts en soufflerie, c’est l’équilibre parfait entre aérodynamisme, légèreté et rigidité. Roulez comme un pro !"
+  },
+  {
+    "ID": 19,
+    "lien": "https://www.decathlon.fr/p/velo-ville-enfant-elops-900-9-12-ans/_/R-p-168834?mc=8487201&c=rouge",
+    "nom_modele": "VELO VILLE ENFANT ELOPS 900 9-12 ANS",
+    "prix": "360€",
+    "couleur_disponible": "Rouge",
+    "taille_disponible": ["S", "M"],
+    "description": "Nous avons conçu ce vélo pour les enfants de 9 à 12 ans (135 à 150 cm) souhaitant se déplacer quotidiennement à vélo en ville par tous les temps. Pour vous déplacer toute l'année, de jour comme de nuit, nous avons équipé ce vélo ville 24 pouces de garde-boue, d'un éclairage LED à dynamo, de pneus à bandes réfléchissantes et d'un porte bagage."
+  },
+  {
+	"ID": 20,
+	"lien": "https://www.decathlon.fr/p/velo-tout-chemin-electrique-cadre-bas-riverside-520-e-vert/_/R-p-342851?mc=8767391",
+	"nom_modele": "Vélo tout chemin électrique - cadre bas - Riverside 520 E vert",
+	"prix": "1399€",
+	"couleur_disponible": "Vert Paster",
+	"taille_disponible": ["S", "M", "L"],
+	"description": "Rythmez vos randonnées sur route & chemin grâce à l'assistance électrique ! Ressentez ce coup de pouce qui fait la différence jusqu'à 100 km. Version améliorée du Riverside 500 E. Meilleure autonomie, éclairage intégré et enjambement bas. Egalement disponible en cadre haut."
   }
 ]

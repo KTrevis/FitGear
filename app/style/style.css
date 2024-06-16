@@ -12,13 +12,19 @@
 	width: auto;
 	position: absolute;
 	top: 2rem;
-	height: 30px;
 	transform: translateX(-50%);
 	left: 50%;
+	background: linear-gradient(273deg, #FF00F7 -8.61%, #07E7FF 112.31%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: .8;
+	font-weight: 600;
+	font-size: 25px;
 }
 
 .mainTitle{
-	font-weight: 600;
+	font-weight: 800;
     position: absolute;
     top: -25rem;
     font-size: 50px;
@@ -57,6 +63,9 @@
 	top: 2rem;
 	position: absolute;
 	left: 50%;
+	opacity: .5;
+	height: 30px;
+	width: 30px;
 	transform: translateX(-50%);
 }
 

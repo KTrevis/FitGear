@@ -5,11 +5,6 @@ import Link from 'next/link';
 
 // @ts-ignore
 const cardResult = ({ bike }) => {
-	
-	useEffect(() => {
-		console.log(bike);
-	}, []);
-
 
 	return (
 

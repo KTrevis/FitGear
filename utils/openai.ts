@@ -1,5 +1,7 @@
 import OpenAI from "openai"
+import Groq from "groq-sdk";
 
+//export const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 export const openai = new OpenAI({ apiKey: process.env.AI_API_KEY })
 export const assistantID: string = "asst_lozEYO0j3sFBdxvpEd867r86"
 export const intermediateAssistantID: string = "asst_k490uzyXIMBJbcayWMFIz5tS"
@@ -10,11 +12,6 @@ export async function getAssistant() {
 
 export async function transcribe(audio: File) {
 	const transcription = await openai.audio.transcriptions.create({file: audio, model: "whisper-1"})
-	return transcription.text
-}
-
-export async function speechToText(speech: File) {
-	const transcription = await openai.audio.transcriptions.create({file: speech, model: "whisper-1"})
 	return transcription.text
 }
 
@@ -33,7 +30,7 @@ export async function think(prompt: string) {
 export async function speech(answer: string) {
 	const mp3 = await openai.audio.speech.create({
 		model: "tts-1",
-		voice: "alloy",
+		voice: "echo",
 		input: answer,
 	});
 	const arrBuffer = await mp3.arrayBuffer()

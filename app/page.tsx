@@ -8,7 +8,7 @@ export default function Home() {
 
 	return (
 	<div className="landing">
-			<Image className="logoName" priority src="/image/logoName.png" alt="logo Name"  height={500} width={500} />
+			<h2 className="logoName">FITGear</h2>
 			<TitleLanding />
 			<Image className="assistant" src="/image/assistant.png" alt="vendeur" height={500} width={500} />
 			<Link href="/ia">
