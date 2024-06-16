@@ -1,5 +1,4 @@
 import Groq from "groq-sdk";
-import { NextApiRequest, NextApiResponse } from 'next';
 import { speech, groqAnswer} from '@/utils/openai';
 
 
