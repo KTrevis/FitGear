@@ -32,7 +32,7 @@ export default function AudioRecorder({ history, setHistory, setAudioUrl, isPlay
 			body: JSON.stringify(updateHistory)
 		})
 		const replyText = await res.json()
-		setHistory([...history, { role: "assistant", content: replyText }])
+		setHistory([...updateHistory, { role: "assistant", content: replyText }])
 		chunks = []
 		if (replyText.includes("ID FOUND")) {
 			const idStr = replyText.split(":")[1];
