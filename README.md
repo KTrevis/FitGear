@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FitGear
 
-## Getting Started
+## Présentation de l'application
 
-First, run the development server:
+Nous avons développé une application innovante qui recommande des produits d'un magasin de sport grâce à une intelligence artificielle. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Cette IA agit comme un vendeur virtuel, interagissant avec les utilisateurs pour comprendre leurs besoins et proposer des produits adaptés.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Fonctionnement de l'application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Interaction avec le vendeur virtuel :**
+   - L'utilisateur accède au site et appuie sur le bouton pour s'adresser au vendeur virtuel.
+   - Si nécessaire, le vendeur virtuel pose des questions pour mieux cerner les besoins de l'utilisateur.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Recommandation de produits :**
+   - Une fois que le vendeur virtuel dispose de toutes les informations nécessaires, il recommande un produit adapté aux besoins de l'utilisateur.
+   - Une page s'affiche alors avec une photo du produit, son prix et une courte description.
 
-## Learn More
+3. **Possibilité de réajustement :**
+   - Si l'utilisateur n'est pas satisfait du produit proposé, il peut relancer la conversation et préciser davantage ses besoins.
 
-To learn more about Next.js, take a look at the following resources:
+## Accessibilité de l'application
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pour faciliter l'accès à l'application, des QR codes seront placés à des endroits stratégiques dans le magasin. Les utilisateurs pourront ainsi scanner ces QR codes pour accéder directement au site et interagir avec le vendeur virtuel.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Avantages de l'application
 
-## Deploy on Vercel
+- **Personnalisation :** L'IA interagit directement avec l'utilisateur pour comprendre ses besoins spécifiques.
+- **Accessibilité :** Les QR codes permettent un accès facile et rapide à l'application depuis le magasin.
+- **Efficacité :** L'application propose des produits en stock, garantissant ainsi une recommandation pertinente et réalisable.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Conclusion
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Cette application de recommandation de produits vise à améliorer l'expérience d'achat des clients en magasin, en offrant une assistance personnalisée et instantanée grâce à une intelligence artificielle connectée à la base de données du magasin.
+
+## Business Lean
+
+![alt text](https://github.com/KTrevis/ggh-rendu/blob/main/business-lean.png?raw=true)
