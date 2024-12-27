@@ -32,7 +32,3 @@ Pour faciliter l'accès à l'application, des QR codes seront placés à des end
 ## Conclusion
 
 Cette application de recommandation de produits vise à améliorer l'expérience d'achat des clients en magasin, en offrant une assistance personnalisée et instantanée grâce à une intelligence artificielle connectée à la base de données du magasin.
-
-## Business Lean
-
-![alt text](https://github.com/KTrevis/ggh-rendu/blob/main/business-lean.png?raw=true)
